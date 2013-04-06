@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iso8583 type="PPP">
+<field num="1" name="messageType" type="BCD" length="4"/>
+ <field num="2" name="pan" type="BCD" format="LLVAR" length="19"/>
+ <field num="3" name="process_code" type="BCD" length="6" />
+ <field num="4" name="amount" type="BCD" length="12" />
+ <field num="11" name="trace" type="BCD" length="6" />
+ <field num="12" name="tran_time" type="BCD" format="hhmmss"  length="6" />
+ <field num="13" name="tran_date" type="BCD" format="MMDD"   length="4" />
+ <field num="14" name="card_valildate" type="BCD" format="YYMM"   length="4" />
+ <field num="15" name="settledate" type="BCD" format="MMDD"   length="4" />
+ <field num="22" name="bit22" type="BCD" length="3" />
+ <field num="25" name="bit25" type="BCD" length="2" />
+ <field num="26" name="bit26" type="BCD" length="2" />
+ <field num="32" name="bit32" type="BCD" format="LLVAR" length="11" />
+ <field num="33" name="bit33" type="BCD" format="LLVAR" length="11" />
+ <field num="35" name="bit35" type="BCD" format="LLVAR" length="37" />
+ <field num="36" name="bit36" type="BCD" format="LLLVAR" length="104" />
+ <field num="37" name="bit37" type="ASCII" length="12" />
+ <field num="38" name="bit38" type="ASCII" length="6" />
+ <field num="39" name="bit39" type="ASCII" length="2" />
+ <field num="41" name="tid" type="ASCII" length="8" />
+ <field num="42" name="mid" type="ASCII" length="15" />
+ <field num="48" name="bit48" type="ASCII" format="LLLVAR" length="332" />
+ <field num="49" name="bit49" type="ASCII" length="3" />
+ <field num="52" name="bit52" type="BINARY" length="64" />
+ <field num="53" name="bit53" type="BCD" length="16" />
+ <field num="54" name="bit54" type="ASCII" format="LLLVAR" length="20" />
+ <field num="60" name="bit60" type="BCD" format="LLLVAR" length="11" />
+ <field num="62" name="bit62" type="BCD" format="LLLVAR" length="48" />
+ <field num="63" name="bit63" type="ASCII" format="LLLVAR" length="256" />
+ <field num="64" name="bit64" type="BINARY" length="64" />
+</iso8583>
